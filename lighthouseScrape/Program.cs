@@ -24,7 +24,7 @@ namespace lighthouseScrape
             options.Proxy = proxy;
             options.Profile = new FirefoxProfile();
             options.Profile.SetPreference("devtools.netmonitor.har.enableAutoExportToFile", true);
-            options.Profile.SetPreference("devtools.netmonitor.har.defaultLogDir", @"C:\Users\iansu\Desktop");
+            options.Profile.SetPreference("devtools.netmonitor.har.defaultLogDir", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
             options.Profile.SetPreference("devtools.netmonitor.har.defaultFileName", "network-log-file-%Y-%m-%d-%H-%M-%S");
 
             try
