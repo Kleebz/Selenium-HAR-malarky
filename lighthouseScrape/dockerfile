@@ -1,0 +1,5 @@
+FROM mitmproxy/mitmproxy:latest
+
+RUN mkdir -p /stuff/ && echo " " >> /stuff/outFile.txt
+
+ENTRYPOINT [ "mitmdump", "-w", "/stuff/outFile.txt" ]
