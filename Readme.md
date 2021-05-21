@@ -9,7 +9,7 @@
 docker build ./ -t [your docker image name here]
 note: ignore the square brackets
 then run like this:
-  ```
+```
 docker run -it --rm -p 8080:8080 [your docker image name]
 "-it" -> interactive and teletype (docker process will take over the prompt, exit with ctrl-C)
 "-p" -> set the port mapping from host:container
