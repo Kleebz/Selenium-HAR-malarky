@@ -25,3 +25,5 @@ docker ps -as
 ```
 docker cp [containerName]:\path\to\dump\from\dockerfile path\to\host\dir
 ```
+
+cheers :beer:
